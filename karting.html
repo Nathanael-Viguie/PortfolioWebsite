@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Karting project — Nathanaël</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=JetBrains+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<nav>
+  <a href="../index.html" class="nav-name">NL</a>
+  <ul class="nav-links">
+    <li><a href="../index.html#projects">Projects</a></li>
+    <li><a href="../index.html#about">About</a></li>
+  </ul>
+</nav>
+
+<!-- PROJECT HERO -->
+<div class="proj-hero">
+  <div class="proj-hero-bg">
+    <!-- <img class="proj-hero-img" src="../assets/img/karting-hero.jpg" alt="Karting assembly"> -->
+    <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:#1e1e1e;font-family:'JetBrains Mono',monospace;font-size:0.7rem;letter-spacing:0.1em;">
+      [ karting-hero.jpg — add when CATIA renders are ready ]
+    </div>
+  </div>
+  <div class="proj-hero-fade"></div>
+  <div class="proj-hero-inner">
+    <a href="../index.html#projects" class="back">← Projects</a>
+    <div class="project-tags-row" style="margin-bottom: 1rem;">
+      <span class="tag gold">CATIA V5</span>
+      <span class="tag gold">Aerodynamics</span>
+      <span class="tag">Chassis</span>
+      <span class="tag">Brake system</span>
+      <span class="tag">Steering</span>
+      <span class="tag">ISO drawings</span>
+    </div>
+    <h1 style="font-size: clamp(1.8rem, 4vw, 3.2rem);">Full karting assembly —<br>chassis, systems & aero surfaces</h1>
+    <div class="proj-meta-row">
+      <div class="meta-cell">
+        <span class="meta-k">Course</span>
+        <span class="meta-v">Expressió Gràfica 2</span>
+      </div>
+      <div class="meta-cell">
+        <span class="meta-k">Institution</span>
+        <span class="meta-v">EPSEM · UPC Manresa</span>
+      </div>
+      <div class="meta-cell">
+        <span class="meta-k">Year</span>
+        <span class="meta-v">2024–2025</span>
+      </div>
+      <div class="meta-cell">
+        <span class="meta-k">Software</span>
+        <span class="meta-v">CATIA V5</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- BODY + SIDEBAR -->
+<div class="proj-body">
+
+  <div class="body-text">
+
+    <div class="reveal">
+      <h2>Overview</h2>
+      <p>
+        Main deliverable of the Expressió Gràfica 2 course at EPSEM (UPC Manresa), completed during
+        my Erasmus exchange. The goal was to produce a complete CAD assembly of a kart —
+        from individual part modeling through to full assembly and production drawings.
+      </p>
+      <p>
+        Standard components (seat, steering wheel, engine, wheels) were sourced from manufacturer
+        databases and integrated into the assembly, consistent with how structural design actually
+        works — supplier geometry anchors your layout, you design everything around it.
+      </p>
+    </div>
+
+    <div class="reveal">
+      <h2>Parts designed from scratch</h2>
+      <ul>
+        <li>Tubular steel chassis — space frame geometry, sized for rigidity and kart-spec compliance</li>
+        <li>Rear disc brake system — disc, caliper mounts, master cylinder bracket</li>
+        <li>Steering hub and front knuckles — stub axles, kingpin geometry, tie rod attachment</li>
+        <li>Rear axle assembly — solid axle with bearing carriers and sprocket interface</li>
+        <li>Aerodynamic bodywork — surfacic front fairing and rear panels, mounting directly onto the chassis frame</li>
+      </ul>
+    </div>
+
+    <div class="reveal">
+      <h2>Aerodynamic surfaces</h2>
+      <p>
+        Designed using the Generative Shape Design workbench in CATIA V5 — surfacic modeling rather
+        than solid. The forms aren't CFD-optimized at this stage, but they're built to mount correctly:
+        proper datum references, realistic clearances, and coherent interface geometry with the frame tubes.
+      </p>
+      <p>
+        A deliberate step beyond the course scope, and a first applied exercise in the direction of
+        aerodynamic design on constrained vehicle geometry.
+      </p>
+    </div>
+
+    <div class="proj-gallery reveal">
+      <div class="gallery-cell">[ Chassis — isometric ]</div>
+      <div class="gallery-cell">[ Brake disc — detail ]</div>
+      <div class="gallery-cell">[ Steering hub ]</div>
+      <div class="gallery-cell">[ Rear axle ]</div>
+      <div class="gallery-cell">[ Aero surfaces ]</div>
+      <div class="gallery-cell">[ Full assembly ]</div>
+    </div>
+    <p class="gallery-note">→ CATIA renders to be added once accessible on a higher-spec machine</p>
+
+    <div class="reveal">
+      <h2>Engineering drawings</h2>
+      <p>
+        The drawing set covers individual parts with tolerances and material callouts,
+        sub-assemblies with exploded views and parts lists, and full assembly views with section cuts —
+        all following ISO projection standards and UPC title block conventions.
+      </p>
+    </div>
+
+    <div class="reveal">
+      <h2>Skills applied</h2>
+      <ul>
+        <li>CATIA V5 — Part Design, Assembly Design, Generative Shape Design</li>
+        <li>Engineering drawing to ISO standards — projections, tolerancing, section views</li>
+        <li>Assembly architecture — kinematic constraints, DOF analysis, interference checking</li>
+        <li>Integration of supplier STEP geometry into original assemblies</li>
+        <li>Surfacic aerodynamic modeling on constrained chassis geometry</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- SIDEBAR -->
+  <div class="sidebar">
+
+    <div class="side-card reveal">
+      <div class="side-title">Specs</div>
+      <div class="spec-row"><span class="spec-k">Software</span><span class="spec-v">CATIA V5</span></div>
+      <div class="spec-row"><span class="spec-k">Aero method</span><span class="spec-v">Surfacic GSD</span></div>
+      <div class="spec-row"><span class="spec-k">Original parts</span><span class="spec-v">Chassis, brakes, steering, axle, aero</span></div>
+      <div class="spec-row"><span class="spec-k">Sourced parts</span><span class="spec-v">Seat, wheel, engine</span></div>
+      <div class="spec-row"><span class="spec-k">Drawing std.</span><span class="spec-v">ISO projections</span></div>
+      <div class="spec-row"><span class="spec-k">Course</span><span class="spec-v">EG2 · UPC EPSEM</span></div>
+    </div>
+
+    <div class="side-card reveal d1">
+      <div class="side-title">Report</div>
+      <a href="../assets/pdf/karting-report.pdf" class="dl-btn" download>
+        ↓ &ensp;Download PDF
+      </a>
+      <p class="dl-note">Watermarked · LinkedIn</p>
+    </div>
+
+  </div>
+</div>
+
+<div style="border-top:1px solid var(--border); padding: 2rem 3rem; display:flex; justify-content:flex-start;">
+  <a href="../index.html#projects" class="back">← All projects</a>
+</div>
+
+<footer>
+  <span>Nathanaël Lastname</span>
+  <span style="color: var(--subtle);">Built by hand · GitHub Pages</span>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>
