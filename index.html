@@ -3,152 +3,104 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nathanaël — F1 Aerodynamics & Engineering Portfolio</title>
-  <meta name="description" content="Mechanical engineering portfolio — F1 aerodynamics, CFD simulation, CAD, and high-performance motorsport systems.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://googleapis.com" rel="stylesheet">
-  <!-- Correction : Liaison directe à la racine -->
+  <title>Nathanaël — Engineering Portfolio</title>
+  <meta name="description" content="Mechanical engineering portfolio — design, CAD, and aerodynamics.">
+  <link rel="preconnect" href="https://googleapis.com">
+  <link rel="preconnect" href="https://gstatic.com" crossorigin>
+  <link href="https://googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <nav>
-  <a href="#" class="nav-name">NL <span class="nav-aero">AERO</span></a>
+  <a href="#" class="nav-logo">NATHANAËL</a>
   <ul class="nav-links">
     <li><a href="#projects">Projects</a></li>
-    <li><a href="#about">About</a></li>
+    <li><a href="#about">About & Contact</a></li>
   </ul>
 </nav>
 
-<!-- HERO with aerodynamic streamlines canvas -->
+<!-- HERO SECTION -->
 <section class="hero">
-  <canvas id="streamCanvas" class="hero-canvas" aria-hidden="true"></canvas>
-  <div class="hero-text">
-    <div class="hero-pre">Aspiring F1 Aerodynamicist & Mechanical Engineer</div>
-    <h1>Sculpting<br>the <span>airflow.</span></h1>
-    <p class="hero-sub">
-      Specialized in Computational Fluid Dynamics (CFD), aerodynamic surface generation, and high-performance motorsport design. Engineering speed through fluid dynamics.
+  <div class="hero-content">
+    <div class="hero-tag">Mechanical & Aerodynamic Engineering Student</div>
+    <h1>Engineering portfolio.</h1>
+    <p class="hero-subtitle">
+      Focusing on high-performance mechanical systems, fluid dynamics, and aerodynamic surface optimization. Currently building technical depth to contribute to elite motorsport engineering.
     </p>
-    <div class="hero-actions">
-      <a href="#projects" class="btn btn-gold">Explore Aero Projects →</a>
-      <!-- Correction : CV à placer directement à la racine pour fonctionner -->
-      <a href="cv.pdf" class="btn btn-ghost" download>Download CV</a>
+    <div class="hero-buttons">
+      <a href="#projects" class="btn btn-primary">View Projects</a>
+      <a href="cv.pdf" class="btn btn-secondary" download>Download CV (PDF)</a>
     </div>
-  </div>
-  <div class="scroll-indicator" aria-hidden="true">
-    <div class="scroll-line"></div>
-    <span>downforce</span>
   </div>
 </section>
 
-<!-- PROJECTS -->
+<!-- PROJECTS SECTION -->
 <section id="projects">
-  <div class="section-label reveal">Selected Aerodynamic & Design Work</div>
-  <h2 class="reveal d1">Race Engineering Projects</h2>
-  <div class="section-rule reveal d2"></div>
+  <div class="container">
+    <span class="section-subtitle">Selected Work</span>
+    <h2 class="section-title">Technical Projects</h2>
+    
+    <div class="projects-grid">
+      
+      <!-- Project 1: Karting -->
+      <a href="karting.html" class="project-card">
+        <div class="project-meta">
+          <span class="project-year">2024 – 2025</span>
+          <span class="project-institution">UPC EPSEM</span>
+        </div>
+        <h3 class="project-card-title">Full Karting Assembly — Chassis & Aerodynamic Bodywork</h3>
+        <p class="project-card-desc">
+          Complete high-performance kart modeled from scratch. Design of the mechanical chassis, disk brake systems, steering geometry, and surfacic aerodynamic bodywork integrated on the frame with standardized technical drawings.
+        </p>
+        <div class="project-tags">
+          <span>CATIA V5</span>
+          <span>Aerodynamics</span>
+          <span>Chassis Design</span>
+          <span>ISO Drawings</span>
+        </div>
+        <span class="project-link-text">Read technical case study →</span>
+      </a>
 
-  <div class="projects-list reveal d3">
-
-    <!-- Project 1: Karting Assembly -->
-    <!-- Correction : Lien direct vers karting.html à la racine -->
-    <a href="karting.html" class="project-entry">
-      <div class="project-thumb-wrap">
-        <div class="thumb-placeholder">[ CATIA V5 Aero Bodywork Render ]</div>
-      </div>
-      <div class="project-info">
-        <div class="project-tags-row">
-          <span class="tag gold">CFD Simulation</span>
-          <span class="tag gold">Surfacic Aero</span>
-          <span class="tag">CATIA V5</span>
-          <span class="tag">Chassis Design</span>
-          <span class="tag">UPC EPSEM</span>
-        </div>
-        <div class="project-title">Full Karting Assembly — Surfacic Aerodynamics & Mechanical Chassis</div>
-        <div class="project-desc">
-          Complete high-performance kart modeled from scratch. Engineered a custom aerodynamic bodywork system to optimize drag reduction and boundary layer control, fully integrated on a custom-designed mechanical chassis with full ISO manufacturing drawings.
-        </div>
-        <div class="project-year">Expressió Gràfica 2 · 2024–2025</div>
-      </div>
-      <div class="project-arrow">→</div>
-    </a>
-
-    <!-- Project 2: Formula Student Addition -->
-    <div class="project-entry conceptual-project">
-      <div class="project-thumb-wrap">
-        <div class="thumb-placeholder">[ OpenFOAM / Ansys Fluent Mesh ]</div>
-      </div>
-      <div class="project-info">
-        <div class="project-tags-row">
-          <span class="tag gold">External Aero</span>
-          <span class="tag gold">Downforce Optimization</span>
-          <span class="tag">CFD Mesh</span>
-          <span class="tag">Front Wing Design</span>
-        </div>
-        <div class="project-title">Formula Student Multi-Element Front Wing Optimization</div>
-        <div class="project-desc">
-          Research and design of a multi-element front wing layout. Focused on ground effect maximization, flap angle optimization for vortex generation (Y250 simulation studies), and wingtip vortex mitigation to clean the airflow directed towards the car rear.
-        </div>
-        <div class="project-year">Academic Research · Ongoing</div>
-      </div>
     </div>
-
   </div>
 </section>
 
-<!-- ABOUT -->
-<section id="about" style="border-top: 1px solid var(--border);">
-  <div class="section-label reveal">Background</div>
-  <h2 class="reveal d1">Aerodynamicist DNA</h2>
-  <div class="section-rule reveal d2"></div>
-
-  <div class="about-strip reveal d3">
-    <div class="about-bio">
-      <p>
-        Engineering student at <strong>UTBM (France)</strong>, currently expanding my international engineering background through an Erasmus program at <strong>UPC (EPSEM Manresa, Spain)</strong>. Specializing in mechanical engineering with a heavy track focus on fluid dynamics and automotive performance.
-      </p>
-      <p>
-        My absolute professional goal is <strong>Formula 1 Aerodynamics</strong>. I thrive on deciphering complex flow fields, managing flow separation, and maximizing downforce to extract every millisecond of performance out of high-velocity systems.
-      </p>
-      <p>
-        Outside the simulator room: competitive mountain biking (where I constantly analyze real-world biomechanics and drag forces) and a passion for high-end track machinery engineering.
-      </p>
-      <div class="about-links">
-        <a href="https://linkedin.com/in/YOUR_LINKEDIN" class="btn btn-ghost" target="_blank">LinkedIn →</a>
-        <a href="cv.pdf" class="btn btn-ghost" download>CV (PDF)</a>
+<!-- ABOUT SECTION -->
+<section id="about">
+  <div class="container">
+    <span class="section-subtitle">Background</span>
+    <h2 class="section-title">About Me</h2>
+    
+    <div class="about-grid">
+      <div class="about-text">
+        <p>
+          I am a Mechanical Engineering student from <strong>UTBM (France)</strong>, currently completing an international academic track through an Erasmus exchange at <strong>UPC (Manresa, Spain)</strong>. 
+        </p>
+        <p>
+          My long-term professional goal is to work in <strong>aerodynamics and race engineering</strong>. I am fascinated by the physics that control flow fields, boundary layers, and downforce generation, and I actively seek to master the tools required to optimize track performance.
+        </p>
+        <p>
+          Outside of engineering labs, I practice competitive mountain biking, which fuels my understanding of real-world dynamics, vehicle behavior, and endurance under pressure.
+        </p>
       </div>
-    </div>
-    <div class="about-aside">
-      <div class="aside-row">
-        <span class="aside-key">Home Institution</span>
-        <span class="aside-val">UTBM (France)</span>
-      </div>
-      <div class="aside-row">
-        <span class="aside-key">International Track</span>
-        <span class="aside-val">UPC · Manresa (Spain)</span>
-      </div>
-      <div class="aside-row">
-        <span class="aside-key">Core Toolkit</span>
-        <span class="aside-val">CFD · CAD Surfacic · CATIA</span>
-      </div>
-      <div class="aside-row">
-        <span class="aside-key">Target Industry</span>
-        <span class="aside-val">F1 & Elite Motorsport</span>
-      </div>
-      <div class="aside-row">
-        <span class="aside-key">Languages</span>
-        <span class="aside-val">FR · EN · ES · DE</span>
+      
+      <div class="about-info-table">
+        <div class="info-row"><span class="info-label">Education</span><span class="info-value">UTBM (FR) / UPC (ES)</span></div>
+        <div class="info-row"><span class="info-label">Specialization</span><span class="info-value">Mechanical Design & Fluid Dynamics</span></div>
+        <div class="info-row"><span class="info-label">Languages</span><span class="info-value">French · English · Spanish · German</span></div>
+        <div class="info-row"><span class="info-label">LinkedIn</span><span class="info-value"><a href="https://linkedin.com" target="_blank">Connect →</a></span></div>
       </div>
     </div>
   </div>
 </section>
 
 <footer>
-  <span>Nathanaël — Aspiring F1 Aerodynamicist</span>
-  <span style="color: var(--subtle);">Aerodynamic Engineering Portfolio · GitHub Pages</span>
+  <div class="container footer-content">
+    <p>&copy; Nathanaël. All rights reserved.</p>
+    <p class="footer-sub">Built with clean HTML & CSS.</p>
+  </div>
 </footer>
 
-<!-- Correction : Liaison directe à la racine -->
-<script src="main.js"></script>
 </body>
 </html>
